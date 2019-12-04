@@ -3,10 +3,10 @@ def nyc_pigeon_organizer(data)
  
   pigeonList = {}
   data.each do |attributesList, specificAttributes|
-    value.each do |specificAttributes, pigeonNames|
+    specificAttributes.each do |specificAttributes, pigeonNames|
       pigeonNames.each do |specificPigeon|
         if pigeonList[specificPigeon] == nil
-          pigeon_list[specificPigeon] = {}
+          pigeonList[specificPigeon] = {}
         end
         if pigeonList[specificPigeon][attributesList] == nil
           pigeonList[specificPigeon][attributesList] = []
